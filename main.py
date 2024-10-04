@@ -17,11 +17,12 @@ if st.button("Scrape Site"):
         # print(result)
         body_content = extract_body_content(result)
         cleaned_content = clean_body_content(body_content)
-        st.session_state.dom_content = cleaned_content
+        # st.session_state.dom_content = cleaned_content
+        st.session_state.dom_content = result
 
         with st.expander("View DOM Content"):
-            st.text_area("DOM Content", cleaned_content, height=300)
-
+            # st.text_area("DOM Content", cleaned_content, height=300)
+            st.text_area("DOM Content", result, height=300)
     else:
         st.write("Please enter a URL to scrape.")
 
