@@ -1,5 +1,5 @@
 import streamlit as st
-from scrape2 import (
+from scrape import (
     scrape_website, 
     split_dom_content, 
     clean_body_content, 

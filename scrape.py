@@ -31,7 +31,7 @@ import os
 #         driver.quit()
 
 load_dotenv()
-SBR_WEBDRIVER = 'https://brd-customer-hl_b20fe4d8-zone-ai_scrape:c1453vjm47kf@brd.superproxy.io:9515'
+SBR_WEBDRIVER = ''
 
 
 def scrape_website(website):
